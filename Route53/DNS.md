@@ -67,3 +67,8 @@ aws route53 list-reusable-delegation-sets
 aws route53 create-reusable-delegation-set --caller-reference <random value>
 aws route53 create-reusable-delegation-set --caller-reference first-delegation-set
 ```
+
+#### Create Hosted zone useing delegation id
+```
+aws route53 create-hosted-zone --name <value> --caller-reference set1 --delegation-set-id /delegationset/N099794433991OCEVWB7U
+```
